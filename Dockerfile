@@ -1,9 +1,15 @@
-FROM node:8.10.0
+FROM node:10.15.3-alpine
 
 WORKDIR /src
 
-RUN npm install -g gulp
+COPY package*.json ./
 
-RUN npm install
+RUN npm install --only=production
 
-COPY . /src
+RUN npm install pm2 -g
+
+COPY . .
+
+EXPOSE 8000
+
+CMD ["pm2-runtime", "pm2.config.js"]

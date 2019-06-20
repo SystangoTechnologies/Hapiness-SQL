@@ -7,5 +7,5 @@ web:
 #  links:
 #    - db
   command: cd /src
-  command: gulp 
+  command: pm2-runtime pm2.config.js
 
