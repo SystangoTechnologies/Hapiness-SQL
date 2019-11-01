@@ -76,7 +76,7 @@
     "request-promise": "^4.2.4",
     "require-dir": "^1.2.0",
     "sass-loader": "^7.1.0",
-    "sequelize": "^4.43.2",
+    "sequelize": "^5.15.1",
     "sequelize-cli": "^5.4.0",
     "supertest": "^4.0.2",
     "uglifyjs-webpack-plugin": "^2.1.2",
